@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  
 }
 
 .page {
@@ -34,30 +35,7 @@ body {
   height: 100%;
 }
 
-/* Status Bar */
 
-.status-bar {
-  height: 25px;
-  background: #004e45;
-  color: #fff;
-  font-size: 14px;
-  padding: 0 8px;
-}
-
-.status-bar:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.status-bar div {
-  float: right;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 0 0 8px;
-  font-weight: 600;
-}
 
 /* Chat */
 
@@ -73,7 +51,7 @@ body {
 
 .user-bar {
   height: 55px;
-  background: #005e54;
+  background:#3E99FA;
   color: #fff;
   padding: 0 8px;
   font-size: 24px;
@@ -99,56 +77,40 @@ body {
   margin: 0 0 0 20px;
 }
 
-.user-bar .actions.more {
-  margin: 0 12px 0 32px;
-}
+
 
 .user-bar .actions.attachment {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 20px;
 }
 
 .user-bar .actions.attachment i {
   display: block;
-  transform: rotate(-45deg);
+  
 }
 
-.user-bar .avatar {
-  margin: 0 0 0 5px;
-  width: 36px;
-  height: 36px;
-}
 
-.user-bar .avatar img {
-  border-radius: 50%;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-  display: block;
-  width: 100%;
-}
+
+
 
 .user-bar .name {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  text-overflow: ellipsis;
+  
   letter-spacing: 0.3px;
   margin: 0 0 0 8px;
   overflow: hidden;
   white-space: nowrap;
-  width: 110px;
+  
 }
 
-.user-bar .status {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0;
-}
+
 
 /* Conversation */
 
 .conversation {
   height: calc(100% - 12px);
   position: relative;
-  background: #efe7dd url("https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg") repeat;
+  background: #3b3b3b;
   z-index: 0;
 }
 
@@ -261,9 +223,10 @@ body {
 }
 
 .message.received {
-  background: #fff;
+  background: #000;
   border-radius: 0px 5px 5px 5px;
   float: left;
+  color:#fff;
 }
 
 .message.received .metadata {
@@ -272,23 +235,25 @@ body {
 
 .message.received:after {
   border-width: 0px 10px 10px 0;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #000 transparent transparent;
   top: 0;
   left: -10px;
 }
 
 .message.sent {
-  background: #e1ffc7;
+  background:#1cb2d4;
   border-radius: 5px 0px 5px 5px;
   float: right;
+  color:#fff;
 }
 
 .message.sent:after {
   border-width: 0px 0 10px 10px;
-  border-color: transparent transparent transparent #e1ffc7;
+  border-color: transparent transparent transparent #65a8f0;
   top: 0;
   right: -10px;
 }
+
 
 /* Compose */
 
@@ -376,7 +341,7 @@ body {
 }
 
 .conversation-compose .send .circle {
-  background: #008a7c;
+  background: #3E99FA;
   border-radius: 50%;
   color: #fff;
   position: relative;
@@ -390,6 +355,7 @@ body {
 .conversation-compose .send .circle i {
   font-size: 24px;
   margin-left: 5px;
+ 
 }
 
 /* Small Screens */
