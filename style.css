@@ -108,7 +108,7 @@ body {
 /* Conversation */
 
 .conversation {
-  height: calc(100% - 12px);
+  height: calc(100% - 12px) !important;
   position: relative;
   background: #3b3b3b;
   z-index: 0;
@@ -130,7 +130,7 @@ body {
 }
 
 .conversation .conversation-container {
-  height: calc(100% - 68px);
+  height: calc(100% - 68px) !important;
   box-shadow: inset 0 10px 10px -10px #000000;
   overflow-x: hidden;
   padding: 0 16px;
@@ -249,9 +249,9 @@ body {
 
 .message.sent:after {
   border-width: 0px 0 10px 10px;
-  border-color: transparent transparent transparent #65a8f0;
+  border-color: transparent transparent transparent #1cb2d4;
   top: 0;
-  right: -10px;
+  right: -8px;
 }
 
 
@@ -342,11 +342,11 @@ body {
 
 .conversation-compose .send .circle {
   background: #3E99FA;
-  border-radius: 50%;
+  border-radius: 10%;
   color: #fff;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
